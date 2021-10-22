@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cookbook</title>
+
+    <!--BootStrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+
+    <!-- Star Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Frank Ruhl Libre Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet" />
+
+    <!-- Niconne Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet" />
+    <script src="./src/main.js"></script>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://thumbs.dreamstime.com/b/icono-del-libro-de-la-receta-concepto-moda-logotipo-en-el-backg-blanco-131157627.jpg" alt="" width="30" height="24" /> Cook Book
+            </a>
+            <div class="items">
+                <ul class="nav justify-content-end">
+                    <div class="dropdown"></div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">RECIPES</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">VEGAN</a></li>
+                    <li><a class="dropdown-item" href="#">BIO</a></li>
+                    <li><a class="dropdown-item" href="#">MEAT LOVER</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">EQUIPMENT</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">OVENS</a></li>
+                <li><a class="dropdown-item" href="#">KNIVES</a></li>
+                <li><a class="dropdown-item" href="#">BRANDS</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">INGREDIENTS</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">VEGGIES</a></li>
+                <li><a class="dropdown-item" href="#">FRUITS</a></li>
+                <li><a class="dropdown-item" href="#">MEATS</a></li>
+                <li><a class="dropdown-item" href="#">BIO</a></li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <!-- <div class="bg-image"></div> -->
+            <div class="web-info">
+                <div>
+                    <img src="./images/Food-Cutlery-icon.png" style="width: 60px; height: 70px;" alt="Image can not be
+            displayed" />
+                </div>
+                <div>
+                    <h1 id="welcome">SPOONFUL OF FLAVOUR</h1>
+                </div>
+            </div>
+            <h6 class="tagline">
+                <span>FAMILY - FRIENDLY RECIPES AND TASTY ADVENTURES</span>
+            </h6>
+            <h3>OUR LATEST RECIPES</h3>
+            <section id="recipes">
+                <!--Pasta-->
+                <div class="recipe-card" onclick="imageClick('./recipe.html')">
+                    <figure>
+                        <a href="./recipe.html" target="_parent"><img src="images/pasta.jpg" alt="pasta" title="Pasta" /></a>
+                    </figure>
+                    <div class="card-info">
+                        <ul class="dish-prep">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 2C4.6875 2 2 4.6875 2 8C2 11.3125 4.6875 14 8 14C11.3125 14 14 11.3125 14 8C14 4.6875 11.3125 2 8 2Z"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M8 4V8.5H11"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> 2.5hrs
+                            </li>
+                            <li>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1>Pasta with Spinach and Mushrooms</h1>
+                </div>
+
+                <!--Pasta-->
+                <div class="recipe-card" onclick="imageClick('./recipe.html')">
+                    <figure>
+                        <a href="./recipe.html" target="_parent"><img src="./images/pizza.jpg" alt="pizza" title="Pizza" /></a>
+                    </figure>
+                    <div class="card-info">
+                        <ul class="dish-prep">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 2C4.6875 2 2 4.6875 2 8C2 11.3125 4.6875 14 8 14C11.3125 14 14 11.3125 14 8C14 4.6875 11.3125 2 8 2Z"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M8 4V8.5H11"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> 2hrs
+                            </li>
+                            <li>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1>Pizza with Tomatoes and Mozarella</h1>
+                </div>
+
+                <!--Pasta-->
+                <div class="recipe-card" onclick="imageClick('./recipe.html')">
+                    <figure>
+                        <a href="./recipe.html" target="_parent"><img src="images/lasagne.jpg" alt="lasagne" title="Lasagne" /></a>
+                    </figure>
+                    <div class="card-info">
+                        <ul class="dish-prep">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 2C4.6875 2 2 4.6875 2 8C2 11.3125 4.6875 14 8 14C11.3125 14 14 11.3125 14 8C14 4.6875 11.3125 2 8 2Z"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M8 4V8.5H11"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> 1hr
+                            </li>
+                            <li>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1>Lasagne with Qourn Mince and Rich Sauce</h1>
+                </div>
+
+                <!--Pasta-->
+                <div class="recipe-card" onclick="imageClick('./recipe.html')">
+                    <figure>
+                        <a href="./recipe.html" target="_blank"><img src="images/pasta.jpg" alt="pasta" title="Pasta" /></a>
+                    </figure>
+                    <div class="card-info">
+                        <ul class="dish-prep">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 2C4.6875 2 2 4.6875 2 8C2 11.3125 4.6875 14 8 14C11.3125 14 14 11.3125 14 8C14 4.6875 11.3125 2 8 2Z"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M8 4V8.5H11"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> 2.5hrs
+                            </li>
+                            <li>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1>Pasta with Spinach and Mushrooms</h1>
+                </div>
+
+                <!--Pasta-->
+                <div class="recipe-card" onclick="imageClick('./recipe.html')">
+                    <figure>
+                        <a href="./recipe.html" target="_parent"><img src="./images/pizza.jpg" alt="pizza" title="Pizza" /></a>
+                    </figure>
+                    <div class="card-info">
+                        <ul class="dish-prep">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 2C4.6875 2 2 4.6875 2 8C2 11.3125 4.6875 14 8 14C11.3125 14 14 11.3125 14 8C14 4.6875 11.3125 2 8 2Z"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M8 4V8.5H11"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> 2hrs
+                            </li>
+                            <li>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1>Pizza with Tomatoes and Mozarella</h1>
+                </div>
+
+                <!--Pasta-->
+                <div class="recipe-card" onclick="imageClick('./recipe.html')">
+                    <figure>
+                        <a href="./recipe.html" target="_parent"><img src="images/pizza.jpg" alt="lasagne" title="Lasagne" /></a>
+                    </figure>
+                    <div class="card-info">
+                        <ul class="dish-prep">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8 2C4.6875 2 2 4.6875 2 8C2 11.3125 4.6875 14 8 14C11.3125 14 14 11.3125 14 8C14 4.6875 11.3125 2 8 2Z"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M8 4V8.5H11"
+                      stroke="#070705"
+                      stroke-opacity="0.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg> 1hr
+                            </li>
+                            <li>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1>Lasagne with Qourn Mince and Rich Sauce</h1>
+                </div>
+            </section>
+            <div class="method"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="./images/Food-Cutlery-icon.png" style="width: 40px; height: 50px;" alt="Image can not be
+            displayed" />
+                </div>
+                <div class="col">
+                    <h5>KEEP IN TOUCH!</h5>
+                </div>
+                <div class="col">
+                    <a style="font-weight: bold;" href="#">RECIPES</a><br />
+                    <a style="font-weight: bold;" href="#">QUICK & EASY</a><br />
+                    <a style="font-weight: bold;" href="#">IN THE KITCHEN</a><br />
+                    <a style="font-weight: bold;" href="#">BUYING GUIDES</a><br />
+                    <a style="font-weight: bold;" href="#">HOLIDAYS & SEASONS</a><br />
+                </div>
+                <div class="col">
+                    <a href="#">About us</a><br />
+                    <a href="#">Terms of Use</a><br />
+                    <a href="#">Editorial Guidelines</a><br />
+                    <a href="#">Cookies</a><br />
+                    <a href="#">California Privacy Notice</a><br />
+                    <a href="#">EU Privacy</a><br />
+                </div>
+                <div class="col">
+                    <a href="#">Advertise</a><br />
+                    <a href="#">Careers</a><br />
+                    <a href="#">Privacy Policy</a><br />
+                    <a href="#">Contact</a><br />
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

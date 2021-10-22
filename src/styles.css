@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    margin: 0px auto;
+    justify-content: center;
+    background-color: #efe4e8;
+    font-family: "Frank Ruhl Libre", Georgia, serif;
+}
+
+main>div>h3 {
+    margin-left: 32px;
+}
+
+.web-info {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 200;
+}
+
+h6.tagline {
+    letter-spacing: 0.4em;
+    color: #f08080;
+    font-family: "uniform", Geneva, Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0 32px 48px 32px;
+}
+
+h6.tagline span {
+    background-color: #efe4e8;
+    padding: 0 10px;
+}
+
+h6.tagline::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #f08080;
+    margin: -15px 0 20px;
+}
+
+#recipes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+
+.border {
+    border-bottom: 2px solid #f08080;
+}
+
+.recipe-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    color: #070705;
+    width: 352px;
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+.recipe-card:hover {
+    transform: scale(1.02);
+}
+
+.recipe-card figure {
+    height: 224px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 32px;
+}
+
+.recipe-card figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    margin: 0 24px 8px;
+}
+
+.dish-prep {
+    list-style-type: none;
+    margin-left: -32px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.dish-prep li {
+    display: flex;
+    align-items: center;
+}
+
+.dish-prep li svg {
+    margin-right: 8px;
+}
+
+.checked {
+    color: rgba(255, 166, 0, 0.753);
+}
+
+.recipe-card h1 {
+    font-weight: 400;
+    margin: 0 24px 24px 24px;
+    font-size: 24px;
+}
+
+.method {
+    margin: 32px 0;
+    padding: 32px 0;
+    border-bottom: 2px solid #f08080;
+    margin: 0 32px 48px 32px;
+}
